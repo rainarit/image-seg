@@ -19,6 +19,6 @@ The libraries and frameworks displayed above could be installed in the following
 
 `pip3 install 'framework/library'`
 ## Usage ##
-1. Download [facial_landmarking.py](https://github.com/rainarit/FacialLandmarking/blob/master/facial_landmarking.py). 
+1. Download [instance_segmentation.py](https://github.com/rainarit/Image-Instance-Segmentation/blob/master/scripts/instance_segmentation.py). 
 2. Go to your Python IDLE and insert: 
 `python3 instance_segmentation.py`
