@@ -1,4 +1,4 @@
-# Image Instance Segementation using Mask Regional-Convolutional Network
+# Image Instance Segementation using a Mask Regional-Convolutional Neural Network
 #### [instance_segmentation.py](https://github.com/rainarit/Image-Instance-Segmentation/blob/master/scripts/instance_segmentation.py) #### 
 __Completed :white_check_mark:__
 
