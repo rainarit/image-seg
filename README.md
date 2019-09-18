@@ -1,5 +1,5 @@
-# Image-Instance-Segmentation
-#### [instance_segmentation.py](https://github.com/rainarit/FacialLandmarking/blob/master/facial_landmarking.py) #### 
+# Image Instance Segementation using Mask Regional-Convolutional Network
+#### [instance_segmentation.py](https://github.com/rainarit/Image-Instance-Segmentation/blob/master/scripts/instance_segmentation.py) #### 
 __Completed :white_check_mark:__
 
 This is a Python script which is able to extract local image descriptors and generate a spatial feature map and a fully convolution classification and up-sampling network that takes as input the encoded expression and the spatial feature map and outputs a pixel-wise segmentation mask.
