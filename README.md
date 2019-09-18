@@ -4,7 +4,7 @@ __Completed :white_check_mark:__
 
 This is a Python script which is able to extract local image descriptors and generate a spatial feature map and a fully convolution classification and up-sampling network that takes as input the encoded expression and the spatial feature map and outputs a pixel-wise segmentation mask.
 
-<img src='http://g.recordit.co/fTUgWGwohA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/rainarit/Image-Instance-Segmentation/blob/master/screenshot-car.png' title='Image Walkthrough' width='' alt='Image Walkthrough' />
 
 ## Installation ##
 ### Requirements ###
