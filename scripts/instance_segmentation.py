@@ -8,7 +8,7 @@ import os
 from imutils.video import VideoStream
 
 # load the COCO class labels our Mask R-CNN was trained on
-labelsPath = os.path.sep.join(["/Users/rraina/Desktop/INTERNSHIP 2019/ImageSegmentation/mrcnn",
+labelsPath = os.path.sep.join(["mrcnn/",
 	"object_detection_classes_coco.txt"])
 LABELS = open(labelsPath).read().strip().split("\n")
  
@@ -18,9 +18,9 @@ COLORS = np.random.randint(0, 255, size=(len(LABELS), 3),
 	dtype="uint8")
  
 # derive the paths to the Mask R-CNN weights and model configuration
-weightsPath = os.path.sep.join(["/Users/rraina/Desktop/INTERNSHIP 2019/ImageSegmentation/mrcnn",
+weightsPath = os.path.sep.join(["mrcnn/",
 	"frozen_inference_graph.pb"])
-configPath = os.path.sep.join(["/Users/rraina/Desktop/INTERNSHIP 2019/ImageSegmentation/mrcnn",
+configPath = os.path.sep.join(["mrcnn/",
 	"mask_rcnn_inception_v2_coco_2018_01_28.pbtxt"])
  
 # load our Mask R-CNN trained on the COCO dataset (90 classes)
@@ -29,7 +29,7 @@ print("[INFO] loading Mask R-CNN from disk...")
 net = cv2.dnn.readNetFromTensorflow(weightsPath, configPath)
 
 # initialize the video stream and pointer to output video file
-vs = cv2.VideoCapture("/Users/rraina/Desktop/INTERNSHIP 2019/ImageSegmentation/cars.mp4")
+vs = cv2.VideoCapture("YOUR_VIDEO_CAPUTURE_PATH")
 writer = None
  
 # try to determine the total number of frames in the video file
@@ -143,7 +143,7 @@ while True:
 	if writer is None:
 		# initialize our video writer
 		fourcc = cv2.VideoWriter_fourcc(*"MJPG")
-		writer = cv2.VideoWriter("/Users/rraina/Desktop/INTERNSHIP 2019/ImageSegmentation/cars_segmented.mp4", fourcc, 30,
+		writer = cv2.VideoWriter("YOUR_SEGMENTED_VIDEO_CAPTURE_PATH", fourcc, 30,
 			(frame.shape[1], frame.shape[0]), True)
  
 		# some information on processing single frame
